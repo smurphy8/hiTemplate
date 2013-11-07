@@ -31,6 +31,7 @@ Library
                        ,aeson                    >= 0.6.1.0   &&   < 0.7.1.0
                        ,HTTP                     >= 4000.2.8  &&   < 4000.3.8
                        ,http-conduit             >= 1.9.3     &&   < 2.0
+                       ,lens                     >= 3.9       &&   < 3.2
                        ,hspec                    >= 1.7.2     &&   < 1.7.3
                        ,safe                     >= 0.3.3     &&   < 0.4.3
                        ,text                     >= 0.11.3.1  &&   < 0.11.3.3
@@ -44,6 +45,7 @@ Test-Suite spec
   Ghc-Options:          -Wall
   Main-Is:              Spec.hs
   Build-Depends:        base
+                      , $packageName
                       , hspec
 
 
